@@ -23,6 +23,7 @@ public class UserController {
     public List<User> userList() {
         return userService.userList();
     }
+
     @GetMapping(value = "/{userId}")
     public User getUser(@PathVariable("userId") Integer userId) {
         return userService.getUser(userId);

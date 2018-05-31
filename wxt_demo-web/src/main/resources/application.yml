@@ -46,3 +46,7 @@ pagehelper:
     params: count=countSql
     returnPageInfo: check
 
+logging:
+  level:
+    top.zhuyuncheng.dao: debug
+
