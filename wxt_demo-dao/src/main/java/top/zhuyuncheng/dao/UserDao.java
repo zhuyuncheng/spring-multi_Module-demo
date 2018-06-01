@@ -5,7 +5,6 @@ import top.zhuyuncheng.domain.model.User;
 
 import java.util.List;
 
-@Mapper
 public interface UserDao {
 
     int insert(User user);

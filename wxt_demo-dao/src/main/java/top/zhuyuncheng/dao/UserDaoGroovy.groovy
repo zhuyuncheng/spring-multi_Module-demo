@@ -7,7 +7,6 @@ import org.apache.ibatis.annotations.Select
 import org.apache.ibatis.annotations.Update
 import top.zhuyuncheng.domain.model.User
 
-@Mapper
 interface UserDaoGroovy {
 
     @Select("""

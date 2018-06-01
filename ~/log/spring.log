@@ -1,0 +1,129 @@
+2018-05-31 17:47:23.972  INFO 9227 --- [restartedMain] top.zhuyuncheng.WebApplication           : Starting WebApplication on ZBMAC-C02VX61XH.local with PID 9227 (/Users/zhuyuncheng1/IdeaProjects/wxt-demo/wxt_demo-web/target/classes started by zhuyuncheng1 in /Users/zhuyuncheng1/IdeaProjects/wxt-demo)
+2018-05-31 17:47:23.973  INFO 9227 --- [restartedMain] top.zhuyuncheng.WebApplication           : No active profile set, falling back to default profiles: default
+2018-05-31 17:47:24.168  INFO 9227 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@443beaba: startup date [Thu May 31 17:47:24 CST 2018]; root of context hierarchy
+2018-05-31 17:47:25.440  INFO 9227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba414f5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-31 17:47:25.858  INFO 9227 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-31 17:47:25.878  INFO 9227 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-31 17:47:25.878  INFO 9227 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-31 17:47:25.881  INFO 9227 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/zhuyuncheng1/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-05-31 17:47:25.942  INFO 9227 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-31 17:47:25.942  INFO 9227 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1774 ms
+2018-05-31 17:47:26.078  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-31 17:47:26.079  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-05-31 17:47:26.082  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-31 17:47:26.083  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-31 17:47:26.083  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-31 17:47:26.083  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-31 17:47:26.151  INFO 9227 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-05-31 17:47:26.460  INFO 9227 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-05-31 17:47:26.845  INFO 9227 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Method [java.util.List springfox.documentation.schema.property.OptimizedModelPropertiesProvider.candidateProperties(com.fasterxml.classmate.ResolvedType,com.fasterxml.jackson.databind.introspect.AnnotatedMember,com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition,springfox.documentation.spi.schema.contexts.ModelContext)] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2018-05-31 17:47:26.998  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{userId}],methods=[GET]}" onto public top.zhuyuncheng.domain.model.User top.zhuyuncheng.controller.UserController.getUser(java.lang.Integer)
+2018-05-31 17:47:26.998  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public java.lang.String top.zhuyuncheng.controller.UserController.updateUser(top.zhuyuncheng.domain.model.User)
+2018-05-31 17:47:26.999  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{userId}],methods=[PATCH]}" onto public java.lang.String top.zhuyuncheng.controller.UserController.patchUser(java.lang.Integer,java.lang.String)
+2018-05-31 17:47:26.999  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public java.lang.String top.zhuyuncheng.controller.UserController.addUser(top.zhuyuncheng.domain.model.User)
+2018-05-31 17:47:26.999  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<top.zhuyuncheng.domain.model.User> top.zhuyuncheng.controller.UserController.userList()
+2018-05-31 17:47:27.000  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-05-31 17:47:27.002  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-31 17:47:27.003  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-31 17:47:27.003  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-31 17:47:27.006  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-31 17:47:27.006  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-31 17:47:27.186  INFO 9227 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-31 17:47:27.360  INFO 9227 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@443beaba: startup date [Thu May 31 17:47:24 CST 2018]; root of context hierarchy
+2018-05-31 17:47:27.416  INFO 9227 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-31 17:47:27.416  INFO 9227 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-31 17:47:27.632  WARN 9227 --- [restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2018-05-31 17:47:27.967  INFO 9227 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-05-31 17:47:28.001  INFO 9227 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-31 17:47:28.003  INFO 9227 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-05-31 17:47:28.003  INFO 9227 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-31 17:47:28.009  INFO 9227 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-05-31 17:47:28.010  INFO 9227 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-05-31 17:47:28.021  INFO 9227 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-05-31 17:47:28.035  INFO 9227 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-05-31 17:47:28.043  INFO 9227 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-05-31 17:47:28.046  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2018-05-31 17:47:28.048  INFO 9227 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=top.zhuyuncheng.controller.UserController}]] 
+2018-05-31 17:47:28.049  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method patchUser was user-controller
+2018-05-31 17:47:28.049  INFO 9227 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: patchUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=top.zhuyuncheng.controller.UserController}]] 
+2018-05-31 17:47:28.049  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateUser was user-controller
+2018-05-31 17:47:28.049  INFO 9227 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=top.zhuyuncheng.controller.UserController}]] 
+2018-05-31 17:47:28.050  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2018-05-31 17:47:28.050  INFO 9227 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=top.zhuyuncheng.controller.UserController}]] 
+2018-05-31 17:47:28.050  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method userList was user-controller
+2018-05-31 17:47:28.050  INFO 9227 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: userList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=top.zhuyuncheng.controller.UserController}]] 
+2018-05-31 17:47:28.053  INFO 9227 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2018-05-31 17:47:28.072  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-31 17:47:28.072  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-05-31 17:47:28.077  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-31 17:47:28.077  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-05-31 17:47:28.081  INFO 9227 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.top.zhuyuncheng.controller.UserController.addUser.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.081  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.top.zhuyuncheng.controller.UserController.addUser.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.097  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2018-05-31 17:47:28.108  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2018-05-31 17:47:28.115  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.115  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.115  INFO 9227 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.115  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.140  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.140  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.141  INFO 9227 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.141  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.141  INFO 9227 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{userId}.top.zhuyuncheng.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.141  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{userId}.top.zhuyuncheng.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.145  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2018-05-31 17:47:28.146  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2018-05-31 17:47:28.148  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-31 17:47:28.148  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-05-31 17:47:28.148  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-31 17:47:28.148  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-05-31 17:47:28.148  INFO 9227 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{userId}.top.zhuyuncheng.controller.UserController.patchUser.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.148  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{userId}.top.zhuyuncheng.controller.UserController.patchUser.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.150  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method patchUser was user-controller
+2018-05-31 17:47:28.151  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method patchUser was user-controller
+2018-05-31 17:47:28.152  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-31 17:47:28.152  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-05-31 17:47:28.152  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-31 17:47:28.152  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-05-31 17:47:28.152  INFO 9227 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.top.zhuyuncheng.controller.UserController.updateUser.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.152  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.top.zhuyuncheng.controller.UserController.updateUser.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.153  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateUser was user-controller
+2018-05-31 17:47:28.154  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateUser was user-controller
+2018-05-31 17:47:28.155  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<top.zhuyuncheng.domain.model.User>(true)
+2018-05-31 17:47:28.155  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<top.zhuyuncheng.domain.model.User>(true)
+2018-05-31 17:47:28.155  INFO 9227 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<top.zhuyuncheng.domain.model.User>(true)
+2018-05-31 17:47:28.155  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<top.zhuyuncheng.domain.model.User>(true)
+2018-05-31 17:47:28.156  INFO 9227 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.156  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.156  INFO 9227 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<top.zhuyuncheng.domain.model.User>(true)
+2018-05-31 17:47:28.156  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<top.zhuyuncheng.domain.model.User>(true)
+2018-05-31 17:47:28.156  INFO 9227 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.156  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key top.zhuyuncheng.domain.model.User(true)
+2018-05-31 17:47:28.157  INFO 9227 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.top.zhuyuncheng.controller.UserController.userList.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.157  INFO 9227 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.top.zhuyuncheng.controller.UserController.userList.DefaultGenericTypeNamingStrategy
+2018-05-31 17:47:28.157  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method userList was user-controller
+2018-05-31 17:47:28.158  INFO 9227 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method userList was user-controller
+2018-05-31 17:47:28.204  INFO 9227 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-31 17:47:28.209  INFO 9227 --- [restartedMain] top.zhuyuncheng.WebApplication           : Started WebApplication in 4.583 seconds (JVM running for 5.33)
+2018-05-31 17:47:47.527  INFO 9227 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-31 17:47:47.527  INFO 9227 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-31 17:47:47.546  INFO 9227 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-05-31 17:47:47.598 DEBUG 9227 --- [http-nio-8080-exec-1] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==>  Preparing: SELECT * FROM t_user WHERE userId = ? 
+2018-05-31 17:47:47.617 DEBUG 9227 --- [http-nio-8080-exec-1] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==> Parameters: 1006(Integer)
+2018-05-31 17:47:47.631 DEBUG 9227 --- [http-nio-8080-exec-1] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : <==      Total: 1
+2018-05-31 17:47:47.904 DEBUG 9227 --- [http-nio-8080-exec-2] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==>  Preparing: SELECT * FROM t_user WHERE userId = ? 
+2018-05-31 17:47:47.905 DEBUG 9227 --- [http-nio-8080-exec-2] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==> Parameters: 1006(Integer)
+2018-05-31 17:47:47.906 DEBUG 9227 --- [http-nio-8080-exec-2] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : <==      Total: 1
+2018-05-31 17:47:48.181 DEBUG 9227 --- [http-nio-8080-exec-3] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==>  Preparing: SELECT * FROM t_user WHERE userId = ? 
+2018-05-31 17:47:48.181 DEBUG 9227 --- [http-nio-8080-exec-3] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==> Parameters: 1006(Integer)
+2018-05-31 17:47:48.183 DEBUG 9227 --- [http-nio-8080-exec-3] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : <==      Total: 1
+2018-05-31 17:47:48.440 DEBUG 9227 --- [http-nio-8080-exec-4] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==>  Preparing: SELECT * FROM t_user WHERE userId = ? 
+2018-05-31 17:47:48.440 DEBUG 9227 --- [http-nio-8080-exec-4] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==> Parameters: 1006(Integer)
+2018-05-31 17:47:48.442 DEBUG 9227 --- [http-nio-8080-exec-4] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : <==      Total: 1
+2018-05-31 17:47:48.653 DEBUG 9227 --- [http-nio-8080-exec-5] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==>  Preparing: SELECT * FROM t_user WHERE userId = ? 
+2018-05-31 17:47:48.654 DEBUG 9227 --- [http-nio-8080-exec-5] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : ==> Parameters: 1006(Integer)
+2018-05-31 17:47:48.655 DEBUG 9227 --- [http-nio-8080-exec-5] t.zhuyuncheng.dao.UserDaoGroovy.getUser  : <==      Total: 1
+2018-05-31 17:48:02.007  INFO 9227 --- [Thread-19] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@443beaba: startup date [Thu May 31 17:47:24 CST 2018]; root of context hierarchy
+2018-05-31 17:48:02.022  INFO 9227 --- [Thread-19] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-31 17:48:02.023  INFO 9227 --- [Thread-19] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-05-31 17:48:02.027  INFO 9227 --- [Thread-19] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

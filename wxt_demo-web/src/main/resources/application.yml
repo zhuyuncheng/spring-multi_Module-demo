@@ -49,4 +49,4 @@ pagehelper:
 logging:
   level:
     top.zhuyuncheng.dao: debug
-
+  path: /Users/zhuyuncheng1/tmp/log/
